@@ -1,0 +1,40 @@
+\hypertarget{classCCL}{\section{C\-C\-L Class Reference}
+\label{classCCL}\index{C\-C\-L@{C\-C\-L}}
+}
+
+
+{\ttfamily \#include $<$C\-C\-L.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCL_a209f0de55a2fcab9ba1d1c9164d7c35c}{{\footnotesize template$<$class F $>$ }\\void {\bfseries execute} (F \&)}\label{classCCL_a209f0de55a2fcab9ba1d1c9164d7c35c}
+
+\item 
+\hypertarget{classCCL_ad6742db95a4a3fceb109aee7dde5f11e}{{\footnotesize template$<$class F , class A $>$ }\\void {\bfseries execute} (F \&, A \&)}\label{classCCL_ad6742db95a4a3fceb109aee7dde5f11e}
+
+\item 
+\hypertarget{classCCL_aa3b44925cc03e27b541d37ba976042a4}{void {\bfseries Register} ()}\label{classCCL_aa3b44925cc03e27b541d37ba976042a4}
+
+\item 
+\hypertarget{classCCL_a45e1b489dbdc5cf28f12c8191257cd44}{void {\bfseries global\-\_\-join} ()}\label{classCCL_a45e1b489dbdc5cf28f12c8191257cd44}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classCCL_ac3004890fd4cc619d129d1bc8edafc03}{{\footnotesize template$<$class F $>$ }\\void $\ast$ {\bfseries call} (void $\ast$context)}\label{classCCL_ac3004890fd4cc619d129d1bc8edafc03}
+
+\item 
+\hypertarget{classCCL_aaf865c547fc5aea630deaa9a24c9e683}{{\footnotesize template$<$class F $>$ }\\void $\ast$ {\bfseries call\-\_\-void} (void $\ast$context)}\label{classCCL_aaf865c547fc5aea630deaa9a24c9e683}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Principal classe do C++ca\&\&la. Nela acontece todo o controle das threads a serem executadas. Utilizando a biblioteca $<$pthread.\-h$>$ para execução de funções simultaneamente. O controle de semaforos tambem é feito utilizando objetos da biblioteca $<$pthread.\-h$>$ Apartir dos metodos desta classe, o usuário poderá criar e executar funções de modo simultaneo e distribuído de forma muito mais simples e facil dp que apartir de metodos tradicionais. O controle das partes criticas das funções do usuario vai ficar a cargo do C++ca\&la. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-C\-L.\-h\item 
+C\-C\-L\-Facade.\-cpp\end{DoxyCompactItemize}

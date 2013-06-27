@@ -26,6 +26,7 @@ int user_foo_void (){
 	return 1;
 }
 int main(){
+
  	CCL ccl;
 	int n =10;
 	ccl.execute(user_foo, n);

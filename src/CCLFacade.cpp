@@ -1,10 +1,12 @@
 /*
- * CCLFacade.cpp
- *
+ * CCLFacade.cpp *
  *  Created on: 29/05/2013
  *      Author: lucas
  */
 #include <cstdio>
+#include<stdio.h>
+#include<iostream>
+#include"CCL.h"
 CCL::CCL() {
 	available_threads = 64;
 	ccl_thread = new pthread_t[available_threads];
@@ -16,8 +18,8 @@ CCL::CCL() {
 
 template <class F>
 void * call (void * c){
-	std::cout << "Normal Call__" << std::endl;
-	Carrier * carrier = (Carrier*) c;
+	printf("NORMAL_CALL");
+	Carrier * carrier = (Carrier*)c;
 	CCL * context = (CCL*) carrier->context;
 	std::cout << "Function_pos: " << carrier->function_pos << std::endl;
 	F* call_routine = (F*) context->user_function[carrier->function_pos];
